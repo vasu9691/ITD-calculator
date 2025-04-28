@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRA Calculator</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/main.css">
+
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header class="header">
+    <div class="container-fluid">
+        <div class="row heading-row">
+            <div class="col-md-8 heading">
+                <img src="../images/income_tax_department_logo.svg" alt="Government of India" class="logo">
+                <h2 class="mb-0">Income Tax Department</h2>
+                <h4 class="mb-0">Ministry of Finance, Government of India</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Navbar section starts-->
+<nav class="navbar navbar-expand-lg bg-white mt-2">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto my-2  my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item me-2" id="home">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History of direct Taxation</a></li>
+                        <li><a class="dropdown-item" href="#">Who we are</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Departmental Directory</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Taxpayers' charter
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Taxpayers' charter</a></li>
+                        <li><a class="dropdown-item" href="#">Taxpayers' charter reports</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tax Laws & Rules
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acts</a></li>
+                        <li><a class="dropdown-item" href="#">Rules</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Circulars and Notifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tax Information and services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tax services</a></li>
+                        <li><a class="dropdown-item" href="#">Tax tools</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Tax FAQ's</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="#">Tax e-Services</a>
+                </li>
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Publicity Campaigns
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Advertisement Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Events Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar section ends -->
+ <hr>
+
+<div class="container mt-2">
+    
+    <div class="card p-4 ">
+        <form id="hraForm">
+            <div class="finance-act">
+                <p>As amended upto Finance (No.2) Act 2024</p>
+            </div>
+            
+            <hr id="blue-hr">
+
+            <div class="container mt-4">
+                <h6>HOUSE RENT ALLOWANCE</h6>
+                <hr>
+                <div class="row mb-3 align-items-center">
+                  <div class="col-md-4">
+                    <label for="basicSalary" class="form-label">Basic Salary (per annum)</label>
+                  </div>
+                  <div class="col-md-6 offset-md-2">
+                    <input type="number" class="form-control" id="basicSalary" placeholder="Enter Basic Salary">
+                  </div>
+                </div>
+                <hr>
+              
+                <div class="row mb-3 align-items-center">
+                  <div class="col-md-4">
+                    <label for="daReceived" class="form-label">DA forming part of the salary</label>
+                  </div>
+                  <div class="col-md-6 offset-md-2">
+                    <input type="number" class="form-control" id="daReceived" placeholder="Enter DA Received">
+                  </div>
+                </div>
+                <hr>
+
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4">
+                      <label for="hraReceived" class="form-label">HRA Received (per annum)</label>
+                    </div>
+                    <div class="col-md-6 offset-md-2">
+                      <input type="number" class="form-control" id="hraReceived" placeholder="Enter HRA Received">
+                    </div>
+                  </div>
+                  <hr>
+                
+                  <div class="row mb-3 align-items-center">
+                    <div class="col-md-4">
+                      <label for="rentPaid" class="form-label">Rent paid</label>
+                    </div>
+                    <div class="col-md-6 offset-md-2">
+                      <input type="number" class="form-control" id="rentPaid" placeholder="Enter rent paid">
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4">
+                        <label for="cityType" class="form-label">City Type</label>
+                    </div>
+                    <div class="col-md-6 offset-md-2">
+                        <select class="form-select" id="cityType" required>
+                            <option value="">-- Select City Type --</option>
+                            <option value="metro">Metro City</option>
+                            <option value="non-metro">Non-Metro City</option>
+                        </select>
+                    </div>
+
+                </div>
+            <div class="d-flex gap-3 justify-content-center pt-4 pb-2">
+              <button type="submit" class="btn btn-primary">Calculate</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </form>
+    </div>
+
+    <div id="result" class="mt-4 text-center"></div>
+</div>
+<div class="container-fluid disclaimer">
+    <div class="row">
+        <div class="col-lg-12 advisory">
+            <p><strong>Advisory: </strong>Information relates to the law prevailing in the year of publication/ as indicated . Viewers are advised to ascertain the correct position/prevailing law before relying upon any document.​</p>
+        </div>
+        <div class="col-lg-12 disclaimer">
+            <p><strong>Disclaimer: </strong>The above calculator is only to enable public to have a quick and an easy access to basic tax calculation and does not purport to give correct tax calculation in all circumstances. It is advised that for filing of returns the exact calculation may be made as per the provisions contained in the relevant Acts, Rules etc.</p>
+        </div>
+
+    </div>
+</div>
+<!-- Footer starts -->
+<footer class="text-center text-lg-start">
+    <div class="container-fluid">
+        <br>
+
+        <button class="disclaimer-button">Disclaimer</button>
+
+        <div class="row text-start">
+            <div class="col-md-3 footer-links">
+                <a href="#">Report Phishing</a>
+                <br>
+                <a href="#">RTI</a>
+                <br>
+                <a href="#">Children's Corner</a>
+                <br>
+                <a href="#">Website Policies</a>
+            </div>
+
+            <div class="col-md-3 footer-links">
+                <a href="#">Sitemap</a>
+                <br>
+                <a href="#">Shortcut Keys</a>
+                <br>
+                <a href="#">Accessibility Statement</a>
+                <br>
+                <a href="#">TDS - CPC</a>
+            </div>
+
+            <div class="col-md-3 footer-links">
+                <a href="#">Useful Links</a>
+                <br>
+                <a href="#">Subscribe</a>
+                <br>
+                <a href="#">e-Governance</a>
+                <br>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <div class="col-md-3 logos text-center">
+                <img src="../images/Screenshot 2025-04-28 220723.png" alt="STQC-compliant" class="STQC-compliant">
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 text-md-start text-center">
+                <p class="mb-0" style="color:gray;">
+                    © This is the official website of Central Board of Direct Taxes (CBDT), Department of Revenue, Ministry of Finance, Government of India.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end text-center">
+                <div class="d-inline-block social-icons">
+                    <div class="follow-us-on">
+                        <p>Follow us on: </p>
+                    </div>
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="X (Twitter)">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3 visitor-counter">
+            <span><strong>Visitor counter :10004758</strong></span>
+            <span id="visitor-counter" class="visitor-counter"></span>
+            
+        </div>
+
+    </div>
+</footer>
+<!-- Footer ends -->
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../JS/index.js"></script>
+</body>
+</html>
