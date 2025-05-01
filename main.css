@@ -183,3 +183,22 @@ footer {
 .visitor-counter{
     padding-bottom: 1%;
 }
+
+
+@media (max-width: 545px) {
+  .heading {
+    text-align: center; /* Center-align text */
+  }
+
+  .heading .logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+  }
+
+  .heading h2,
+  .heading h4 {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Adds spacing between elements */
+  }
+}
