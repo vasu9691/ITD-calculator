@@ -194,7 +194,7 @@ footer {
   .heading .logo {
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .heading h2,
