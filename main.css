@@ -202,5 +202,6 @@ footer {
     display: block;
     text-align: center;
     margin-top: 2px; /* Adds spacing between elements */
+    padding-bottom: 5px;
   }
 }
