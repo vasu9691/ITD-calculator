@@ -188,6 +188,7 @@ footer {
 @media (max-width: 545px) {
   .heading {
     text-align: center; /* Center-align text */
+    margin-top: 0;
   }
 
   .heading .logo {
