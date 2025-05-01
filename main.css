@@ -201,6 +201,6 @@ footer {
   .heading h4 {
     display: block;
     text-align: center;
-    margin-top: 5px; /* Adds spacing between elements */
+    margin-top: 2px; /* Adds spacing between elements */
   }
 }
