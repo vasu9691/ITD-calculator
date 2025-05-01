@@ -193,12 +193,13 @@ footer {
   .heading .logo {
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
+    margin-top: 5px;
   }
 
   .heading h2,
   .heading h4 {
     display: block;
     text-align: center;
-    margin-top: 10px; /* Adds spacing between elements */
+    margin-top: 5px; /* Adds spacing between elements */
   }
 }
